@@ -1,0 +1,23 @@
+How to change jenkins port for java pacakge (war file )
+java -jar jenkins.war --httpPort=8181
+
+1-) Install Role-based Authorization Strategy Plugin for Manage and Assign Roles  (Lecture = 11. Role Base Strategy for Users)
+
+2-) Compile Java file on command line
+D:\Jenkins Notes>javac HelloWorld.java
+
+3-) Run Java Class on command line
+D:\Jenkins Notes>java HelloWorld
+Hello, World
+
+4-) Trigger Jenkins Job remotely
+
+Build Triggers
+(Click) Trigger builds remotely (e.g., from scripts)
+
+Authentication Token=12345abc777
+Use the following URL to trigger build remotely: JENKINS_URL/job/Hello%20World/build?token=TOKEN_NAME
+
+Execute below command on Browser URl
+http://localhost:8080/job/Hello%20World/build?token=12345abc777
+   
